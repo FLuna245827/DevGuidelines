@@ -21,7 +21,7 @@ Notes: We'll consider that the versioning control system being used is Git.
          * The *Rebase* action should be used to keep the branch up to date with respect to his parent branch.
          * The *Merge* action should be used to deliver the code to his parent branch.
 2. While writing code
-   * ...
+   * Add comments specially when a decision was made so to explain the reason of that code.
 3. On testing
    * If unit and integration tests are written before coding, this step may be done before step 2 above.
    * Run a code coverage tool.
@@ -30,4 +30,7 @@ Notes: We'll consider that the versioning control system being used is Git.
    * Before demanding a Merge Request:
      * Run unit and integration tests. All tests that are included in the code to be deliver must be executed.
      * Detect and correct issues. Run external tools like SonarLint and fix most quality issues.
+
+### When developping microservices
+* Document the service contract with OpenAPI, to let know what and how the inputs and outputs are expected.
      
